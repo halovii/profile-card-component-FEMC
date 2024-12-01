@@ -1,0 +1,132 @@
+*{
+    font-family: Kumbh Sans;
+    font-weight: 400;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-image: 
+        url("images/bg-pattern-bottom.svg"),  
+        /* change this to html img tags and use flexbox instead */
+        url("images/bg-pattern-top.svg"); /* fix postitoning*/
+    background-position: 
+        top left,
+        bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.card-container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.card{
+    width: 400px;
+    height: 440px;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgb(44, 43, 43, 0.2);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    height: 160px;
+}
+
+header .prf{
+    height: 100px;
+    width: 100px;
+    border-radius: 3rem;
+    overflow: hidden;
+    border: 4px solid white;
+    margin: -60px auto 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+header h1{ /* victor crest */
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+}
+header span{ /* 26 */
+    padding: 0.2rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 800;
+}
+header h2{ /* london */
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 59%);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+hr{
+    opacity: 0.5;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+/* stats section*/
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+    text-align: center;
+}
+main h1{
+    font-weight: 800;
+}
+main h3{
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    letter-spacing: 2px;
+}
+
+
+
+/* media query */
+@media (max-width: 440px){
+    .card{
+        width: 320px;
+        height: 380px;
+    }
+    .background{
+        height: 120px;
+        width: 100%;
+    }
+    header h2{ /* london */
+        margin-bottom: 0rem;
+    }
+    main{
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+}
+
+
